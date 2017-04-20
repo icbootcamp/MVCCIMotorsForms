@@ -1,0 +1,22 @@
+﻿@model List<MVCCIMotorsForms.Models.BobViewModel>
+@{
+    ViewBag.Title = "MyView";
+}
+
+<h2>MyView</h2>
+<br />
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+
+    @foreach(var fn in Model)
+    {
+        <tr>
+            <td>@fn.FirstName</td>
+            <td>@fn.LastName</td>
+        </tr>
+    }
+</table>
+
